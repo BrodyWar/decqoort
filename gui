@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T01:34:28.990Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" etag="UujVIqgVZN4y0WeWBB8g" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-24T01:34:46.430Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" etag="28XbLKp_XHiLs9kyZ9N1" version="16.0.3" type="github">
   <diagram id="ilzIGrzhgx4rjl_uRDrc" name="Page-1">
     <mxGraphModel dx="1381" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="sYtjFF69SgKDgd20ACpT-1" value="Gui" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="120" y="340" width="210" height="210" as="geometry" />
+          <mxGeometry x="110" y="370" width="210" height="210" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-2" value="- _font: sf::Font&#xa;- _healthText: sf::Text*&#xa;- _scoreText: sf::Text*&#xa;- _enemyText: sf::Text*&#xa;- _score: std::ostringstream&#xa;- _health: std::ostringstream&#xa;- _enemy: std::ostringstream" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-1">
           <mxGeometry y="26" width="210" height="114" as="geometry" />
@@ -17,7 +17,7 @@
           <mxGeometry y="148" width="210" height="62" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-5" value="MapView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="80" width="250" height="210" as="geometry">
+          <mxGeometry x="210" y="90" width="250" height="210" as="geometry">
             <mxRectangle x="710" y="170" width="80" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -31,7 +31,7 @@
           <mxGeometry y="138" width="250" height="72" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-13" value="ObjectView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="690" y="120" width="240" height="158" as="geometry">
+          <mxGeometry x="520" y="80" width="240" height="158" as="geometry">
             <mxRectangle x="710" y="220" width="100" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -66,7 +66,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-21" value="DrawMenu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="870" y="385" width="210" height="180" as="geometry" />
+          <mxGeometry x="840" y="238" width="210" height="180" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-22" value="- _main_texture: sf::Texture&#xa;- _main_sprite: sf::Sprite&#xa;- _font: sf::Font&#xa;- _menuStatus: sf::Text*&#xa;- _status: ButtonMenu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
           <mxGeometry y="26" width="210" height="94" as="geometry" />
@@ -78,7 +78,7 @@
           <mxGeometry y="128" width="210" height="52" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-25" value="DrawPause" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="570" width="210" height="180" as="geometry" />
+          <mxGeometry x="840" y="530" width="210" height="180" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-26" value="- _pauseMenu: sf::Texture&#xa;- _pauseSprite: sf::Sprite&#xa;- _font: sf::Font&#xa;- _pauseStatus: sf::Text*&#xa;- _status: ButtonPause" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-25">
           <mxGeometry y="26" width="210" height="94" as="geometry" />
