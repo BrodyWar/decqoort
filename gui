@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T01:29:11.652Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" etag="9ZSksR5oZwOmm2XqkEyH" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-24T01:33:50.940Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" etag="DqeHj-kIYFJpa5y_3pyl" version="16.0.3" type="github">
   <diagram id="ilzIGrzhgx4rjl_uRDrc" name="Page-1">
     <mxGraphModel dx="1381" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -66,16 +66,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-21" value="DrawMenu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="760" y="439" width="160" height="86" as="geometry" />
+          <mxGeometry x="870" y="385" width="210" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="sYtjFF69SgKDgd20ACpT-22" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="sYtjFF69SgKDgd20ACpT-22" value="- _main_texture: sf::Texture&#xa;- _main_sprite: sf::Sprite&#xa;- _font: sf::Font&#xa;- _menuStatus: sf::Text*&#xa;- _status: ButtonMenu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
+          <mxGeometry y="26" width="210" height="94" as="geometry" />
         </mxCell>
         <mxCell id="sYtjFF69SgKDgd20ACpT-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="120" width="210" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="sYtjFF69SgKDgd20ACpT-24" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="sYtjFF69SgKDgd20ACpT-24" value="+ DrawMenu()&#xa;+ draw(: sf::RenderWindow*): void&#xa;+ buttonPressed: ButtonMenu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-21">
+          <mxGeometry y="128" width="210" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-25" value="DrawPause" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="570" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-26" value="- _pauseMenu: sf::Texture&#xa;- _pauseSprite: sf::Sprite&#xa;- _font: sf::Font&#xa;- _pauseStatus: sf::Text*&#xa;- _status: ButtonPause" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-25">
+          <mxGeometry y="26" width="210" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-25">
+          <mxGeometry y="120" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-28" value="+ DrawPause()&#xa;+ draw(: sf::RenderWindow*): void&#xa;+ buttonPressed: ButtonPause" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sYtjFF69SgKDgd20ACpT-25">
+          <mxGeometry y="128" width="210" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-29" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="1" source="sYtjFF69SgKDgd20ACpT-25" target="sYtjFF69SgKDgd20ACpT-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="630" as="sourcePoint" />
+            <mxPoint x="530" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sYtjFF69SgKDgd20ACpT-34" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="1" source="sYtjFF69SgKDgd20ACpT-21" target="sYtjFF69SgKDgd20ACpT-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="662.0270270270271" y="580" as="sourcePoint" />
+            <mxPoint x="605.2702702702702" y="510" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
