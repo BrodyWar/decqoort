@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2021-12-23T23:56:40.541Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" version="16.0.3" etag="3gP_5aYpVkiyRExatMb1" type="github"><diagram id="VcQKvkZ2exV--3u1Beg-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-24T00:04:42.948Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.25" etag="DoXGucqg2TyxnIryle0b" version="16.0.3" type="github">
+  <diagram id="VcQKvkZ2exV--3u1Beg-" name="Page-1">
+    <mxGraphModel dx="1381" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-1" value="SaveObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="250" width="260" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-2" value="# toFile: std::ofstream&#xa;# fromFile: std::ifstream&#xa;# _array: json::nlohmann&#xa;# _open: json::nlohmann&#xa;# vec: std::vector&lt;std::string&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="v8tTwanXEQZN2JGCTuMk-1">
+          <mxGeometry y="26" width="260" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="v8tTwanXEQZN2JGCTuMk-1">
+          <mxGeometry y="120" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-4" value="+ SaveObject()&#xa;+setObj(_obj: Object*): void&#xa;+ save(): void&#xa;+ load(): void&#xa;+ loadObj(_obj: Object*): void&#xa;+ saveStat(_st: Statistics*): void&#xa;+ loadStat(_st: Statistics*): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="v8tTwanXEQZN2JGCTuMk-1">
+          <mxGeometry y="128" width="260" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-5" value="GameManager" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="170" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="v8tTwanXEQZN2JGCTuMk-6" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="v8tTwanXEQZN2JGCTuMk-1" target="v8tTwanXEQZN2JGCTuMk-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="490" as="sourcePoint" />
+            <mxPoint x="780" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
